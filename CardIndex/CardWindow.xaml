@@ -1,0 +1,29 @@
+﻿<Window x:Class="CardIndex.CardWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CardIndex"
+        mc:Ignorable="d"
+        Title="CardWindow" Height="800" Width="600">
+    <Grid>
+        <Button Content="Сохранить" Margin="0,520,112,229" Click="Save_Click" HorizontalAlignment="Right" Width="75"/>
+        <Button Content="Назад" Margin="0,520,20,0" VerticalAlignment="Top" Click="Back_Click" HorizontalAlignment="Right" Width="75"/>
+        <TextBox x:Name="fio" HorizontalAlignment="Left" Height="25" Margin="10,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189"/>
+        <Label Content="ФИО" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top" Width="194" Height="40"/>
+        <Label Content="Пол" HorizontalAlignment="Left" Margin="10,116,0,0" VerticalAlignment="Top" Width="194" Height="40"/>
+        <Label Content="Дата рождения" HorizontalAlignment="Left" Margin="10,204,0,0" VerticalAlignment="Top" Width="194" Height="40"/>
+        <TextBox x:Name="address" HorizontalAlignment="Left" Height="25" Margin="10,339,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189"/>
+        <Label Content="Адрес проживания" HorizontalAlignment="Left" Margin="10,294,0,0" VerticalAlignment="Top" Height="40" Width="194"/>
+        <TextBox x:Name="phone" HorizontalAlignment="Left" Height="25" Margin="10,428,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189"/>
+        <Label Content="Телефон" HorizontalAlignment="Left" Margin="10,382,0,0" VerticalAlignment="Top" Width="189" Height="41"/>
+        <DatePicker Name="date" HorizontalAlignment="Left" Margin="10,249,0,0" VerticalAlignment="Top" Width="189" Height="40"/>
+        <RadioButton Name="genderM" Content="М" HorizontalAlignment="Left" Margin="10,161,0,0" VerticalAlignment="Top" IsChecked="True" Height="19" Width="66"/>
+        <RadioButton Name="genderW" Content="Ж" HorizontalAlignment="Left" Margin="10,185,0,0" VerticalAlignment="Top" IsChecked="False" Height="14" Width="64"/>
+        <DataGrid Margin="0,0,10,254" x:Name="dbVisits" HorizontalAlignment="Right" Width="378" Height="469" VerticalAlignment="Bottom"/>
+        <Button Content="Создать" Margin="0,0,205,723" Click="Create_Click" Height="23" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="90" />
+        <Button Content="Обновить" Margin="0,0,299,723" Click="Update_Click" Height="23" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="89" />
+        <Button Content="Удалить" Margin="0,0,112,723" Click="Delete_Click" Height="23" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="89" />
+
+    </Grid>
+</Window>
